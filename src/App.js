@@ -5,7 +5,7 @@ import ProductDetail from './pages/ProductDetail';
 import MainHeader from './components/MainHeader';
 import MainFooter from './components/MainFooter';
 import Users from './components/Users';
-import Login from './pages/login';
+import Login from './pages/Login';
 function App() {
   return (
 		<div>

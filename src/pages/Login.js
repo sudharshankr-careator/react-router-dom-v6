@@ -1,12 +1,11 @@
-import React,{useState, useNavigate} from "react";
+import React,{useState} from "react";
 function Login (){
+//	let navigate = useNavigate();
     const [email, setEmail]=useState('')
     const [pasword, setPasword] = useState("");
-    let Navigate = useNavigate();
-    const handleSubmit = (e) => {
+	const handleSubmit = (e) => {
         e.preventDefault();
-         alert(`Submitting Name ${email, pasword}`);
-		Navigate("/welcome");
+		//navigate("/welcome");
 	};
 
 	return (
@@ -14,20 +13,20 @@ function Login (){
 			<input
 				type="email"
 				name="email"
+				placeholder="Enter your Email"
 				value={email}
 				onChange={(e) => setEmail(e.target.value)}
 				required
 			/>
 			<input
 				type="pasword"
-                name="pasword"
-                value={pasword}
+				name="pasword"
+				placeholder="Enter your Password"
+				value={pasword}
 				onChange={(e) => setPasword(e.target.value)}
 				required
 			/>
-			<button type="submit" value={submit}>
-				submit
-			</button>
+			<button type="submit">submit</button>
 		</form>
 	);
 };
